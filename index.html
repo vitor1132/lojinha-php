@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha</title>
+</head>
+<body>
+
+<h1>Clientes</h1>
+<form action="insertClientes.php" method="post">
+  <input type="text" name="nome_cliente" placeholder="Nome do Cliente" required><br>
+  <input type="text" name="email" placeholder="Email" required><br>
+   <input type="text" name="cidade" placeholder="Cidade" required><br>
+  <br>
+  <button type="submit">Entrar</button>
+</form>
+<h1>Marcas</h1>
+<form action="insertMarcas.php" method="post">
+  <input type="text" name="nome_marca" placeholder="Nome da Marca" required><br>
+  <input type="text" name="pais_origem" placeholder="Pais de Origem" required><br>
+  <br>
+  <button type="submit">Entrar</button>
+</form>
+<h1>Produtos</h1>
+<form action="insertProdutos.php" method="post">
+  <input type="text" name="nome_produto" placeholder="Nome do Produto" required><br>
+  <input type="text" name="preco" placeholder="preço" required><br>
+  <input type="text" name="estoque" placeholder="Estoque" required><br>
+  <input type="text" name="marca_id" placeholder="Id da Marca" required><br>
+  <br>
+  <button type="submit">Entrar</button>
+</form>
+<h1>Pedidos</h1>
+<form action="insertPedidos.php" method="post">
+  <input type="text" name="cliente_id" placeholder="Id do cliente" required><br>
+  <input type="date" name="data_pedido" placeholder="data do pedido" required><br>
+  <input type="text" name="status" placeholder="status" required><br>
+  <br>
+  <button type="submit">Entrar</button>
+</form>
+<h1>itens_compra</h1>
+<form action="insertItens-compra.php" method="post">
+  <input type="text" name="pedido_id" placeholder="Id do pedido" required><br>
+  <input type="text" name="produto_id" placeholder="id do Produto" required><br>
+  <input type="text" name="quantidade" placeholder="quantidade" required><br>
+  <input type="text" name="preco_unitario" placeholder="preço Unitario" required><br>
+  <br>
+  <button type="submit">Entrar</button>
+</form>
+    
+</body>
+</html>
